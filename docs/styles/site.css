@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family:'Courier New', Courier, monospace;
+    letter-spacing: 1.5px;
+    margin: 0;
+    background-color: #023b0f;
+    color: #d3daa1;
+}
+#navigation {
+    background-color: #421b1b;
+
+    header {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+     h1 {
+           margin-block-end: 0;
+           padding: 10px;
+           flex-wrap: wrap; 
+        }
+
+     h2 {
+            margin-block-end: 0;
+            padding: 10px;
+            flex-wrap: wrap;
+    }
+    ul {
+        padding-inline-start: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    }
+}
+h1,h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: Verdana, sans-serif;
+}
+.navText {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+a {
+    text-decoration:none;
+    color: #d3daa1;
+    list-style: none;
+    font-size: 20px;
+}
+a:hover {
+    font-style:italic;
+    color: rgb(154, 205, 50);
+}
+
+nav ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+footer {
+    text-align: center;
+    background-color: #421b1b;
+}
+
+img {
+    max-inline-size: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+section {
+    margin-block-end: 3em;
+}
+main {
+    padding: 20px;
+    inline-size: 80vi;
+    margin-inline: auto;
+}
+
+main a {
+    border-block-end: 3px solid;
+}
+
+ div {
+    border-inline-start: 10px solid #076016;
+    padding-inline-start: 20px;
+}
+
+.border {
+    border: 5px solid #421b1b;
+    box-shadow: 5px 5px 0px 0px #024717;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (min-width: 768px){
+    #navigation {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+         nav {
+            inline-size: 55vi;
+        }
+    }
+    a:visited {
+        color: rgb(154, 205, 50)
+    }
+    .displayGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+    main {
+        inline-size: 80vi;
+        margin: 0 auto;
+    }
+        footer nav {
+        text-align: left;
+    }
+
+    footer address {
+        text-align: right;
+    }
+
+}
